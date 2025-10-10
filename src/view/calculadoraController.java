@@ -35,10 +35,10 @@ public class calculadoraController {
     	
     	//adiciona um escutador de evento no text field de numero 1 ao digitar dentro do text field ele vai trocar a letra por uma informação vazia
     	txtNumero1.textProperty().addListener((observable, oldValue, newValue)->{
-    		txtNumero1.setText(newValue.replaceAll("[^\\d]",""));
+    		txtNumero1.setText(newValue.replaceAll("[^\\d.]",""));
     	});
     	txtNumero2.textProperty().addListener((observable, oldValue, newValue)->{
-    		txtNumero2.setText(newValue.replaceAll("[^\\d]",""));
+    		txtNumero2.setText(newValue.replaceAll("[^\\d.]",""));
     	});
     }
     
