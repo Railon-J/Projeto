@@ -28,7 +28,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Label fx:id="lblResultado" layoutX="31.0" layoutY="468.0" text="Resultado: ">
+      <Label fx:id="lblResultado" layoutX="31.0" layoutY="428.0" text="Resultado: ">
          <font>
             <Font size="18.0" />
          </font>
@@ -36,6 +36,11 @@
       <Label layoutX="66.0" layoutY="28.0" text="CALCULADORA IMC">
          <font>
             <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClassificação" layoutX="31.0" layoutY="507.0" text="Classificação:">
+         <font>
+            <Font size="18.0" />
          </font>
       </Label>
    </children>
