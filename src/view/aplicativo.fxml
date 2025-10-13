@@ -11,5 +11,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <Button layoutX="49.0" layoutY="197.0" mnemonicParsing="false" onAction="#abrirIMC" prefHeight="40.0" prefWidth="258.0" text="Calculadora IMC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

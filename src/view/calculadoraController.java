@@ -69,6 +69,15 @@ public class calculadoraController {
         // RETORNA O VALOR DE DOUBLE PARA string
         // INFORMA O RESULTADO NA LABEL COM O setText
         lblResultado.setText(String.valueOf(Resultado));
+        
+        String parOuImpar;
+        if(Resultado % 2 == 0) {
+        	parOuImpar=" É Par.";
+        } else {
+        	parOuImpar=" É Impar.";
+        }
+        
+        lblResultado.setText("Resultado: "+String.valueOf(Resultado)+parOuImpar);
     }
     
     @FXML
@@ -80,6 +89,15 @@ public class calculadoraController {
         double Resultado = numero1-numero2;
         
         lblResultado.setText(String.valueOf(Resultado));
+        
+        String parOuImpar;
+        if(Resultado % 2 == 0) {
+        	parOuImpar=" É Par.";
+        } else {
+        	parOuImpar=" É Impar.";
+        }
+        
+        lblResultado.setText("Resultado: "+String.valueOf(Resultado)+parOuImpar);
     }
     
     @FXML
@@ -91,6 +109,15 @@ public class calculadoraController {
         double Resultado = numero1 * numero2;
         
         lblResultado.setText(String.valueOf(Resultado));
+        
+        String parOuImpar;
+        if(Resultado % 2 == 0) {
+        	parOuImpar=" É Par.";
+        } else {
+        	parOuImpar=" É Impar.";
+        }
+        
+        lblResultado.setText("Resultado: "+String.valueOf(Resultado)+parOuImpar);
     }
     
     @FXML
@@ -101,14 +128,22 @@ public class calculadoraController {
         txtNumero2.setText(String.valueOf(numero2));
         double Resultado = numero1 / numero2;
         lblResultado.setText(String.valueOf(Resultado));
+        
+        String parOuImpar;
+        if(Resultado % 2 == 0) {
+        	parOuImpar=" É Par.";
+        } else {
+        	parOuImpar=" É Impar.";
+        }
+        
+        lblResultado.setText("Resultado: "+String.valueOf(Resultado)+parOuImpar);
     }
     @FXML
-	private Double strtodouble(String numero) {
+	public static Double strtodouble(String numero) {
     	try {
     		return Double.valueOf(numero);
     	} catch(Exception e) {
     		return (double) 0;
-    		
     	}
     }
 }
