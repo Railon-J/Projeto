@@ -16,5 +16,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <Button layoutX="50.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirjogo" prefHeight="40.0" prefWidth="258.0" text="Jogo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
