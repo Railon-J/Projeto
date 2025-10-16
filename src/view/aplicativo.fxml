@@ -26,5 +26,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <Button layoutX="51.0" layoutY="415.0" mnemonicParsing="false" onAction="#abrirmedia" prefHeight="40.0" prefWidth="258.0" text="Calcular Média">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

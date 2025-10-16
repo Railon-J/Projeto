@@ -78,4 +78,9 @@ public class aplicativoController {
     private void abrirjogotiro() {
         carregarTela("jogotiro.fxml");
     }
+    
+    @FXML
+    private void abrirmedia() {
+        carregarTela("media.fxml");
+    }
 }

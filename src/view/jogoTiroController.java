@@ -1,6 +1,6 @@
 package view;
 
-import java.io.InputStream;
+import java.io.InputStream;	
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
@@ -12,7 +12,6 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
-import view.jogoController.Obstaculo;
 
 public class jogoTiroController {
 	
