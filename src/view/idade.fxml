@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.idadeController">
+   <children>
+      <TextField fx:id="txtIdade" layoutX="54.0" layoutY="179.0" prefHeight="26.0" prefWidth="249.0" promptText="Nome Completo" />
+      <Button fx:id="btCalcularIdade" layoutX="55.0" layoutY="274.0" mnemonicParsing="false" onAction="#calcularIdade" prefHeight="51.0" prefWidth="250.0" text="Calcular Idade">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblResultado" layoutX="14.0" layoutY="442.0" text="Resultado:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpIdade" layoutX="55.0" layoutY="227.0" prefHeight="26.0" prefWidth="250.0" promptText="00/00/0000" />
+   </children>
+</AnchorPane>
