@@ -33,5 +33,6 @@
          </font>
       </Label>
       <Button fx:id="btnReset" layoutX="40.0" layoutY="460.0" mnemonicParsing="false" onAction="#Resetar" prefHeight="26.0" prefWidth="278.0" text="Reset" />
+      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaInicial" text="Voltar" />
    </children>
 </AnchorPane>

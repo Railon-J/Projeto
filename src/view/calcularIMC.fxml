@@ -33,7 +33,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="66.0" layoutY="28.0" text="CALCULADORA IMC">
+      <Label layoutX="67.0" layoutY="55.0" text="CALCULADORA IMC">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -43,5 +43,6 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#voltarTelaInicial" text="Voltar" />
    </children>
 </AnchorPane>
