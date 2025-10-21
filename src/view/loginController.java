@@ -2,6 +2,7 @@ package view;
 
 import java.io.IOException;
 
+import application.dao.usuarioDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,7 +34,8 @@ public class loginController {
 		String usuario=txtUsuario.getText();
 		String senha=txtSenha.getText();
 		
-		if (usuario.equals("Railon")&& senha.equals("admin")) {
+		usuarioDAO dao = new usuarioDAO();
+		if(dao.autenticar(usuario, senha)) {
 			Alert aviso;
 			aviso=new Alert(Alert.AlertType.CONFIRMATION);
 			aviso.setTitle("Confimação");
@@ -83,4 +85,5 @@ public class loginController {
 		});
 	}
 }
+
 
