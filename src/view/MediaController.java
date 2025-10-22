@@ -1,6 +1,6 @@
 package view;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
@@ -52,7 +52,7 @@ public class MediaController {
 	    }
 	    
 	    @FXML
-	    private void voltarTelaInicial(ActionEvent event) {
+	    public void voltarTelaInicial(ActionEvent event) {
 	        try {
 	            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/aplicativo.fxml"));
 	            Parent root = loader.load();
@@ -65,4 +65,4 @@ public class MediaController {
 	            
 	        }
 	    }
-}
+	}

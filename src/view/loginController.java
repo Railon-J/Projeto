@@ -1,12 +1,8 @@
+
 package view;
-
-import java.io.IOException;
-
 import application.dao.usuarioDAO;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -16,19 +12,20 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class loginController {
-
     @FXML
     private PasswordField txtSenha;
 
     @FXML
     private TextField txtUsuario;
     
+
     @FXML
-    private Label lblNovousuario;
-    
+    private Label lblNovoUsuario;
+	
 	public void sair() {
 		System.exit(0);
 	}
+	
 	public void entrar() {
 		try {
 		String usuario=txtUsuario.getText();
@@ -38,52 +35,59 @@ public class loginController {
 		if(dao.autenticar(usuario, senha)) {
 			Alert aviso;
 			aviso=new Alert(Alert.AlertType.CONFIRMATION);
-			aviso.setTitle("Confimação");
+			aviso.setTitle("Confirmação");
 			aviso.setHeaderText(null);
 			aviso.setContentText("Bem Vindo ao Sistema "+usuario);
 			aviso.showAndWait();
 			
-			//Fechar tela de login
+			//FECHAR TELA DE LOGIN
 			txtUsuario.getScene().getWindow().hide();
 			
-			//Abrir a tela principal
+			//ABRE A TELA PRINCIPAL
 			Parent root = FXMLLoader.load(getClass().getResource("aplicativo.fxml"));
 			Stage stage = new Stage();
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
 			
+			
 		} else {
 			Alert aviso;
 			aviso=new Alert(Alert.AlertType.ERROR);
 			aviso.setTitle("Erro");
 			aviso.setHeaderText(null);
-			aviso.setContentText("Usuario ou Senha incorretos");
+			aviso.setContentText("Usuário ou senha incorretos");
 			aviso.showAndWait();
 		}
-	} catch(Exception e) {
-		e.printStackTrace();}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
-	@FXML
-	// @FXML ou @override: indica que será executado assim que a página carregar
+	@FXML  
+	/* @FXML OU @override -> indica que o codigo  
+	será executado assim que carregar a página*/
 	private void initialize() {
-		// Ao pressionar enter no campo usuário foca a edição no campo senha
+	/* QUANDO PRESSIONAR ENTER NO CAMPO USUARIO 
+		FOCA A EDIÇÃO NO CAMPO DE SENHA
+	*/
 		txtUsuario.setOnAction(e->{txtSenha.requestFocus();});
-		// Ao pressionar enter no campo senha aciona o metodo entrar
+	/* QUANDO PRESSIONAR ENTER NO CAMPO SENHA 
+		ACIONA O METODO DE ENTRAR
+	*/
 		txtSenha.setOnAction(e->{entrar();});
 		
-		lblNovousuario.setOnMouseClicked(event->{
-		    try {
-		        Parent root = FXMLLoader.load(getClass().getResource("/view/usuario.fxml"));
-		        Stage stage = new Stage();
-		        stage.setScene(new Scene(root));
-		        stage.show();
-		    } catch (IOException e) {
-		        e.printStackTrace();
-		    }
+		lblNovoUsuario.setOnMouseClicked(event->{
+			try {
+				//ABRE A TELA CADASTRO USUARIO
+				Parent root = FXMLLoader.load(getClass().getResource("usuario.fxml"));
+				Stage stage = new Stage();
+				Scene scene = new Scene(root);
+				stage.setScene(scene);
+				stage.show();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
 		});
 	}
 }
-
-

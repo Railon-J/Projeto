@@ -1,8 +1,9 @@
 package view;
 
 
-import java.io.IOException;
+import java.io.IOException;	
 
+import view.calculadoraController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-import view.calculadoraController; 
+import javafx.stage.Stage; 
 
 public class calcularIMCController {
 

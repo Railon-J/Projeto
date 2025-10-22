@@ -27,11 +27,7 @@ public class usuarioDAO {
 		
 	}
 	
-	
-	
-	
-	
-    //INSERIOR USUARIO
+    //INSERIR USUARIO
     public boolean inserirUsuario(usuarioModel u) {
         try {
         Connection conn=null;
