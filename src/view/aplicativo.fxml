@@ -47,5 +47,10 @@
          <font>
             <Font name="Minecraft" size="12.0" />
          </font></Button>
+      <Button layoutX="51.0" layoutY="417.0" mnemonicParsing="false" onAction="#abrircarro" prefHeight="40.0" prefWidth="258.0" text="Carro">
+         <font>
+            <Font name="Minecraft" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

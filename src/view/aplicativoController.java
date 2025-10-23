@@ -1,6 +1,6 @@
 package view;
 
-import javafx.event.ActionEvent;
+import javafx.event.ActionEvent;	
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -106,5 +106,10 @@ public class aplicativoController {
     @FXML
     private void abriridade() {
         carregarTela("idade.fxml");
+    }
+    
+    @FXML
+    private void abrircarro() {
+        carregarTela("Carro.fxml");
     }
 }

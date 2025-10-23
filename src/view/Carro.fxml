@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="conteudoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.carroController">
+   <children>
+      <Button fx:id="btnCarro1" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" onAction="#selecionarCarro1" text="Camaro" />
+      <Button fx:id="btnCarro2" layoutX="154.0" layoutY="208.0" mnemonicParsing="false" onAction="#selecionarCarro2" prefHeight="26.0" prefWidth="58.0" text="Chiron" />
+      <Button fx:id="btnCarro3" layoutX="154.0" layoutY="273.0" mnemonicParsing="false" onAction="#selecionarCarro3" prefHeight="26.0" prefWidth="58.0" text="SF90" />
+      <Button fx:id="btnCarro4" layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#selecionarCarro4" prefHeight="26.0" prefWidth="58.0" text="Civic" />
+      <Button fx:id="btnCarro5" layoutX="154.0" layoutY="398.0" mnemonicParsing="false" onAction="#selecionarCarro5" prefHeight="26.0" prefWidth="58.0" text="Fusca" />
+   </children>
+</AnchorPane>

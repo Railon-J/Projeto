@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.carro4Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Civic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="121.0" layoutY="225.0" text="Infomações do Carro: " />
+      <Label fx:id="lblMarca" layoutX="52.0" layoutY="283.0" text="Label" />
+      <Label fx:id="lblNome" layoutX="52.0" layoutY="301.0" text="Label" />
+      <Label fx:id="lblMotor" layoutX="52.0" layoutY="319.0" text="Label" />
+      <Label fx:id="lblCor" layoutX="52.0" layoutY="337.0" text="Label" />
+      <Label fx:id="lblAno" layoutX="52.0" layoutY="355.0" text="Label" />
+      <Label fx:id="lblModelo" layoutX="52.0" layoutY="373.0" text="Label" />
+      <Label fx:id="lblEstadodoCarro" layoutX="52.0" layoutY="391.0" />   
+      <Button layoutX="69.0" layoutY="482.0" mnemonicParsing="false" onAction="#desligarCarro" text="Desligar Carro" />
+      <Button layoutX="228.0" layoutY="482.0" mnemonicParsing="false" onAction="#ligarCarro" text="Ligar Carro" />   
+   </children>
+</AnchorPane>
